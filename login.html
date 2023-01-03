@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Import font awesome Liberary -->
+    <!-- <link rel="stylesheet" href="all.css"> -->
+
+    <script src="https://kit.fontawesome.com/5ef60b71ad.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/login.css">
+    <title>E-Commerce Website</title>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <section id="header">
+        <a href="#"><img src="./assets/img/logo.png" class="logo" alt="Logo Image"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+            <div id="mobile">
+                <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+                <i class="fa-solid fa-bars" id="bar"></i>
+            </div>
+        </div>
+    </section>
+
+    <section class="login">
+        <div class="container login-container">
+            <h2>Login</h2>
+            <!-- {{#if loginErr}}
+                    <p class="error">{{loginErr}}</p>
+                {{/if}} -->
+            <form class="contact-form" id="submit-form" action="/login" method="post">
+                <input type="email" name="Email" placeholder="Your Email Address" required>
+                <input type="password" name="Password" placeholder="Password" required>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <a href="signup.html"><h5>Don't have an account? <span style="color: var(--color-primary);">Create one!</span></h5></a>
+            </form>
+        </div>
+</section>
+
+    <!-- Footer Section -->
+    <footer class="section-p1">
+
+        <!-- Contact Links -->
+        <div class="col">
+            <img src="./assets/img/logo.png" alt="Logo Image" class="logo">
+            <h4>Contact</h4>
+            <p><strong>Address: </strong>49 Talkha Road, Street 23, Mansoura </p>
+            <p><strong>Phone: </strong>(+20)0 100 475 8482 / (+20)0 100 252 1911</p>
+            <p><strong>Hours: </strong>10:00 - 18:00 Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <a href="https://www.facebook.com/profile.php?id=100029766133935" target="_blank"><i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a href="https://instagram.com/__ahmedabdalazeem__?igshid=YmMyMTA2M2Y=" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/AhmedAb86712416" target="_blank"><i
+                            class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/ahmed-abdalazeem-226524228/" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/AhmedAbdalazeem49" target="_blank"><i
+                            class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Links -->
+        <div class="col">
+            <h4>About</h4>
+            <a href="about.html">About Us</a>
+            <a href="">Delivery Informations</a>
+            <a href="">Terms & Conditions</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+
+        <!-- Account Links -->
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="">Sign IN</a>
+            <a href="cart.html">View Cart</a>
+            <a href="cart.html">My Wishlists</a>
+            <a href="">Track My Order</a>
+            <a href="contact.html">Help</a>
+        </div>
+
+        <!-- Install app Links -->
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store and Google Play</p>
+            <div class="row">
+                <img src="./assets/img/pay/app.jpg" alt="">
+                <img src="./assets/img/pay/play.jpg" alt="">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="./assets/img/pay/pay.png" alt="">
+        </div>
+
+        <!-- Copyright Links -->
+        <div class="copyright">
+            <p>&copy; 2022 Ahmed Abdalazeem E-Commerce Website</p>
+        </div>
+
+    </footer>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
